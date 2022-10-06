@@ -1,7 +1,7 @@
 # JS8-APRS
 
 ## Introduction
-Many APRS clients make provision for bi-directional processing of APRS packets via KISS over TCP.  JS8Call provides access to a robust weak-signal HF modem via either a bi-directional TCP or UDP port utilizing JSON.  JS8-APRS allows an amateur radio operator to utilize a preferred KISS TCP-compatible APRS client to sendand receive APRS traffic over HF using JS8 as the transport.
+Many APRS clients make provision for bi-directional processing of APRS packets via KISS over TCP.  JS8Call provides access to a robust weak-signal HF modem via either a bi-directional TCP or UDP port utilizing JSON.  JS8-APRS allows an amateur radio operator to utilize a preferred KISS TCP-compatible APRS client to send and receive APRS traffic over HF using JS8 as the transport.
 
 ## Legacy Transports
 From the earliest years of APRS, the HF transport for APRS data has historically been a single "channel" at the top end of the 30m band using 300 baud FSK packet to send and receive data.  While the 30m band has proved a sound choice for propagation, 300 baud FSK packets are easily corrupted by path noise, fading, and interference.  The reliability of the transport results in significant packet loss before channel congestion even becomes a factor.
