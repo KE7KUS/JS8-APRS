@@ -63,13 +63,18 @@ class Connection:
     
     except:
       raise Exception('Valid protocols are either TCP or UDP.')
-    
+      
+    server_connection = f'{self.server_ip},{self.port}'
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.connect(server_connection)
+    print(f'Connected to {self.server_ip} on port {self.port}')
 
   def closeConnection(connection):
       
-    """Close existing network connection."""
-      
+    """Close existing network connection, where 'connection' is a valid socket object."""
+    
+    connection.close()
+    
 class Message:
   
   """Class to manage message traffic between software clients."""
